@@ -1,274 +1,257 @@
-<!DOCTYPE HTML>
-<html>
-	<!-- 	This is the "Head" of the HTML document.
-		It contains information that isn't displayed on the actual page, but is useful
-		for the web browser when loading the page	
-	-->
-	<head>
-		<!-- This is the title of the page. It is the text that appears inside this pages tab in your web browser -->
-		<title>Oxymoron</title>
-      		<link rel="icon" type="image/x-icon" href="/images/favicon-92c496ca24aae9e64ca0b4505a39a0b8267a63c9992fe307ff5047aca4e8b720.ico">
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<!-- 	This links to this page's CSS, which is contained in the folder assets/css and the file main.css.
-			 If you want to edit the styling of this page, you should edit the file assets/css/main.css
-			 If you have a new CSS file you'd like to add with custom styling, you should link to it here using:
-			 <link rel="stylesheet" href="assets/css/my-new-css-file.css"/> 
-		-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!-- 	In the case that the user's browser does not support JavaScript (unlikely, but possible), the page
-			will load a separate set of CSS stylings from the file assets/css/noscript.css
-			Any HTML contained inside <noscript></noscript> tags will be loaded in the event that JavaScript is not
-			available. 
-		-->
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<!-- The body is the location where your site's content will go -->
-	<body class="is-preload">
+<!doctype html>
+<html lang="en">
+  <head>
 
-			<!-- This "div" wraps around all of our content and just changes how things are layed out -->
-			<div id="wrapper">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Researcher, TCS Research">
+    <meta name="author" content="Purvi Das">
+    <meta name="theme-color" content="#222222">
 
-					<!-- This is where the content that appears on page load exists -->
-					<header id="header">
-						<!-- This is the main content of the front page -->
-						<div class="content">
-							<div class="inner">
-								<!-- Here is a heading where you can put your name -->
-								<h1>
-									Purvi Das
-								</h1>
-								<!-- 	Here is an image where you can put a picture of you. 
-									You can change the width and height attributes below to change how large
-									your image is.
+    <link rel="apple-touch-icon" sizes="180x180" href="images/nicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/nicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/nicons/favicon-16x16.png">
 
-									Try adding "border-radius: 50%;" to the style attribute.
-								-->
-								<img src="images/potrait.jpg" style="width:280px; height:280px; object-fit: cover;">
-								<!-- 	Here is a paragraph where you can put your position and institution, or
-									a short line about yourself.
-								-->
-								<p>
-									Undergraduate Student <br> Indian Institute of Information Technology, Guwahati
-								</p>
-								<!-- Here is a paragraph where you can put a link to your CV -->
-								<!-- p>
-									<!-- Note you will want to change where this points to! -->
-									<!-- a href="files/purvidas_cv.pdf" target="_blank">Curriculum Vitae</a -->
-							</div>
-						</div>
-						<!-- This is the navigation menu -->
-						<nav>
-							<!-- This element makes an "Unordered List" -->
-							<ul>
-								<!-- This is a "List Item" -->
-								<li>
-									<!-- 	Note that this links to #about, which will move the page to wherever
-										the element with the id "about" exists.
-									-->
-									<a href="#about">About Me</a>
-								</li>
-								<li>
-									<a href="#research">Research</a>
-								</li>
-								<li>
-									<a href="https://purvidas.medium.com/">Blog</a>
-								</li>
-								<li>
-									<a href="#contact">Contact</a>
-								</li>
-								<!-- 	You can add another button to your navigation menu by adding
-									another List Item with a link inside of it.
-								-->
-							</ul>
-						</nav>
-					</header>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style-3.css">
+      
+    <title>Purvi Das</title>
+  </head>
+  <body>
+    <!-- <h1>Hello, world!</h1> -->
+    <div class="container pt-5 allstuffp">
+        <div class="row pt-5 allstuff">
+            <div class="col-md-4 pt-5">
+                <div class="fixed-posi">
+                <p class="name">Purvi Das</p>
+                <img src="images/potrait.jpg" class="profilepic pt-3 pb-2">
+                <div class="pt-5 menur"><a class="menulink" target="_blank" href="assets/purvidas_cv.pdf">curriculum vitae</a></div>
+                <div class=""><a class="menulink" target="_blank" href="https://scholar.google.com/citations?user=aAxm2McAAAAJ&hl=en&authuser=2">google scholar</a></div>
+                <div class=""><a class="menulink" target="_blank" href="mailto:purvidas.ed@gmail.com">email address</a></div>
+                <div class=""><a class="menulink" target="_blank" href="https://github.com/purvikuhi">github profile</a></div>
+                <div class=""><a class="menulink" target="_blank" href="https://www.linkedin.com/in/purvi-das/">linkedin</a></div>
+                <div class=""><a class="menulink" target="_blank" href="https://twitter.com/purvidas_">twitter</a></div>
+                
 
-					<!-- These are the "cards" that appear when you click the buttons on the main page -->
-					<div id="main">
-						<!-- 	Here is the "About Me" card. Note it has the id "about", which the previous 
-							button links to.
-						-->
-						<article id="about">
-							<h2 class="major">About Me</h2>
-							<!-- Here is an image that you can customize for this page -->
-							<span class="image main">
-								<img src="images/about.jpg" alt=""/>
-							</span>
-							<!-- Here are three paragraphs where you can fill out information about yourself -->
-							<!--p>
-								Student. Researcher. Traveller.
-							</p> -->
-							<p>
-								<i> In this immense loophole <br>
-								The breeze emanates <br>
-								And I smile <br>
-								Soon it fades away <br> 
-								So, will I </i>
-							</p>
-							<p>
-								<!-- Items contained in <b> tags are bolded! -->
-								<!--b>Education:</b>
-							</p>
-							<ul>
-								<li>Bachelor of Technology, Electronics and Communication Engineering, IIITG, India</li>
-								<li>2007-2019, AISSE & AISSCE, Central Board of Secondary Education, India</li> 
-							</ul> -->
-							<!--p>
-								<b>Research Interests:</b>
-							</p> 
-							<p>
-								<b>Publications:</b> <a href="https://ui.adsabs.harvard.edu/">Include ADS link!</a>
-							</p> -->
-						</article>
+                <!-- <div class="pt-5">usercontext</div> -->
+                <!-- <div class="">travel history</div> -->
+                <!-- <div class="">this template</div> -->
+                </div>
+            </div>
+            <div class="col-md-8 pt-5 about">
+                 I am a researcher at <a class="in-text" href="https://www.tcs.com/what-we-do/research"
+                     target="_blank">TCS Innovation Labs</a>, where I work with <a class="in-text"
+                     href="https://in.linkedin.com/in/manoj-nambiar-1b7715" target="_blank">Manoj Nambiar</a> and
+                 <a class="in-text" href="https://in.linkedin.com/in/rekha-singhal-7122635"
+                     target="_blank">Rekha Singhal</a>. I am interested in working on problems that focus on
+                 emerging computing technologies. <br> <br>
 
-						<!-- Here is the "Research" card. -->
-						<article id="research">
-							<h2 class="major">Research</h2>
-							<span class="image main">
-								<img src="images/research.jpg" alt=""/>
-							</span>
-							<h3 class="major">Experience</h3>
-							<p>
-								<b>Indian Institute of Information Technology, Guwahati</b><br>Dec 2021-Present
-							</p>
-							<!--ul>
-								<li>Research Intern, Department of Humanities and Social Sciences</li>
-							</ul> -->
-							<p>
-								<b>International Institute of Information Technology, Hyderabad</b><br>May 2022-Jun 2022
-							</p>
-							<p>
-								<b>Indian Oil Corporation Limited</b><br>Dec 2021-Jan 2022
-							</p>							
-							<p>
-								<!-- 	A <br> tag puts in a break so that the text that follows it displays on
-									the next line.
-								-->
-								<b>Research Intern, Defence Research and Development Organisation</b><br>May 2021-July, 2021
-							</p>
-							<!--p>
-								<b>Project II Title</b><br>Project description, including further links to posters, talks, publications.
-							</p> -->
-							<h3 class="major">Publication</h3>
-							<p>
-								<a href="https://ieeexplore.ieee.org/document/9850461" class="icon fa-link">
-								Design Automation of Two-Stage Operational Amplifier Using Multi-Objective Genetic Algorithm and SPICE Framework
-								<span class="label">
-								</span>
-								</a>
-							</p>
-							<p>
-								<b>For more: </b><br>
-								<li>
-									ResearchGate 
-									<a href="https://www.researchgate.net/profile/Purvi-Das" class="icon fa-globe">
-										<span class="label">ResearchGate</span>
-									</a>
-								</li>
-								<li>
-									Scholar 
-									<a href="https://scholar.google.com/citations?user=aAxm2McAAAAJ&hl=en&authuser=2" class="icon fa-graduation-cap">
-										<span class="label">Scholar</span>
-									</a>
-								</li>						
-							</p>
-							
-						</article>
 
-						<!-- Here is the "Community" card. -->
-						<!--article id="community">
-							<h2 class="major">Community</h2>
-							<span class="image main">
-								<img src="images/pic03.jpg" alt=""/>
-							</span>
-							<p>
-								<b>Teaching:</b>
-							</p>
-							<p>
-								<b>Outreach:</b>
-							</p>
-							<p>
-								<b>Equity & Inclusion:</b>
-							</p>
-						</article> -->
+                 I have been fortunate to work with an amazing set of researchers in the past. I am currently an undergraduate final year student 
+                    at <a class="in-text" href="https://www.iiitg.ac.in/" target="_blank">Indian Institute of Information Technology, Guwahati, India</a> where
+                    I previously worked as an undergraduate researcher under <a class="in-text" href="https://www.iiitg.ac.in/faculty/babita/" target="_blank">Babita Jajodia</a> in the domain of mixed signal VLSI where I created a framework to automate optimized transistor sizing.
+                    I also interned at <a class="in-text" href="https://www.drdo.gov.in/labs-and-establishments/advanced-systems-laboratory-asl"
+                    target="_blank">Defence Research and Development Organisation, India</a> with <a class="in-text"
+                    href="https://in.linkedin.com/in/tezabhamidi" target="_blank">Teza Bhaimidi </a> and <a class="in-text" href="http://cstar.iiit.ac.in/"
+                    target="_blank">International Institute of Information Technology Hyderabad, India </a> with <a class="in-text"
+                    href="https://www.iiit.ac.in/people/faculty/Siddharthadas/" target="_blank"> Siddhartha Das</a> in the domain of radar detection and quantum computing respectively. 
+                    I was also part of Machine Learning Summer School as a fellow organized by <a class="in-text"
+                    href="https://www.amazon.science/academic-engagements/amazon-launches-annual-ml-summer-school-in-india" target="_blank">
+                    Amazon India</a> in the summer of 2022. <br><br>
+                    
+                Along with research I have spent time working as an editor for <a class="in-text" href="https://www.iiitg.ac.in/iiitgecell/"
+                    target="_blank">Entrepreneurship Cell, IIITG </a>. Parallely I have worked as a social media and marketing lead for
+                    <a class="in-text" href="https://gdsc.community.dev/indian-institute-of-information-technology-guwahati/" target="_blank">Google Developer Students Club, IIITG</a>
+                    and served as an editorial board member for <a class="in-text"
+                    href="https://www.ted.com/tedx/events/50563" target="_blank">TEDxIIITG</a>. <br><br>
 
-						<!-- Here is a the "Contact" card. -->
-						<article id="contact">
-							<h2 class="major">Contact</h2>
-							<!-- p> 
-								<b>Email:</b> 
-							</p> -->
-							<!--p> 
-								<b>Address:</b> 
-							</p> -->
+                For more details, check my <a class="in-text" href="assets/purvidas_cv.pdf" target="_blank">CV</a> or hit me up
+                on my <a class="in-text" href="mailto:purvidas.ed@gmail.com">email</a>. <br><br>
 
-							<!-- 	Here are the fancy icons that link to your social media.
-								These icons are rendered using Font Awesome fonts, and you can find more icons
-								here: https://fontawesome.com/icons
-							-->
-							<ul class="icons">
-								<li>
-									<a href="purvi.das@iiitg.ac.in" class="icon fa-envelope">
-										<span class="label">Email</span>
-									</a>
-								</li>			
-								<li>
-									<a href="https://www.linkedin.com/in/purvi-das/" class="icon fa-linkedin">
-										<span class="label">Linkedin</span>
-									</a>
-								</li>
-								<!-- The GitHub icon -->
-								<li>
-									<a href="https://github.com/purvikuhi" class="icon fa-github">
-										<span class="label">GitHub</span>
-									</a>
-								</li>
-								<!-- The Instagram icon -->
-								<li>
-									<a href="https://twitter.com/purvidas_" class="icon fa-twitter">
-										<span class="label">Twitter</span>
-									</a>
-								</li>
-								<!--li>
-									<a href="https://www.instagram.com/das.arto.arty/" class="icon fa-instagram">
-										<span class="label">Instagram</span>
-									</a>
-								</li> -->
-								<!-- 	We can add a new icon by searching on the Font Awesome website
-									for the correct class name and inserting it as a new list item.
+                You can also checkout my <a class="in-text" href="https://purvidas.medium.com/"
+                    target="_blank">Medium</a>
+                which is my own little blog as I love writing about my passions, what interest me, what interests others, and sharing all of my thoughts with my
+                readers. <br><br>
 
-									We found "envelope" here: https://fontawesome.com/icons/envelope
-								-->
-								
-							</ul>
-						</article>
-					</div>
+                 <!-- I graduated with a B.Tech (Hons.) in Electronics and Instrumentation from <a class="in-text"
+                     href="https://www.bits-pilani.ac.in/" target="_blank">BITS Pilani</a>, Goa, India in 2019. For more
+                 details, check my <a class="in-text" href="assets/sebastin_cv.pdf" target="_blank">CV</a> or hit me up
+                 on my <a class="in-text" href="mailto:hi@sebast.in">email</a>. -->
 
-					<!-- This is the footer that appears at the bottom of the page -->
-					<footer id="footer">
-						<!-- 	You can change "Untitled" to your name to show everyone that
-							this is your work.
-						-->
-						<p class="copyright">&copy; 2021 by Purvi Das. </p>
-					</footer>
+                 <p class="header pt-5">Publications</p>
+                 <div class="py-2">
+                 <p class="paper my-2 pl-2">
+                     <span class="papertitle">Design Automation of Two-Stage Operational Amplifier Using Multi-Objective Genetic Algorithm and SPICE Framework </span><br>
+                     Purvi Das*, <span class="thisauthor">Babita Jajodia*</span>
+                     <!-- <span class="noter"> (* = Equal Contribution)</span><br> -->
+                     <span class="conf"><a class="confshort" href="https://ieeexplore.ieee.org/xpl/conhome/9850395/proceeding">ICICT'22</a> 
+                        | International Conference on Inventive Computation Technologies </span><br>
+                    
+                     <a class="tag" href="https://ieeexplore.ieee.org/document/9850461" target="_blank">paper</a><span class="tagsep">|</span>
+                     <a class="tag" href="https://ieeexplore.ieee.org/document/9850461" target="_blank">abstract</a><span class="tagsep">|</span>
+                     <a class="tag" href="cites/icict2022.bib" target="_blank">cite</a>
+                 </p>
+                 </div>
+                 <!-- <div class="py-2">
+                 <p class="paper my-2 pl-2">
+                     <span class="papertitle">Deploying Language Technologies for Underserved Communities</span><br>
+                     Kalika Bali, Monojit Choudhury, Sunayana Sitaram, <span class="thisauthor">Sebastin Santy</span><br>
+                     <span class="conf"><a class="confshort" href="https://en.unesco.org/LT4All">LT4All</a> | UNESCO International Conference on Language
+                         Technologies for All</span><br>
+                     <a class="tag" href="https://en.unesco.org/sites/default/files/lt4all_programme_day2and3.pdf"
+                         target="_blank">proceedings</a><span class="tagsep">|</span>
+                     <a class="tag" href="assets/unesco.pdf" target="_blank">poster</a>
+                 </p>   </div>
+                 <div class="py-2">
+                 <p class="paper my-2 pl-2">
+                     <span class="papertitle">Unsung Challenges of Building and Deploying Language Technologies for Low
+                         Resource Language Communities</span><br>
+                     Pratik Joshi, Christain Barnes, <span class="thisauthor">Sebastin Santy</span>, Simran Khanuja,
+                     Sanket Shah, Anirudh
+                     Srinivasan, Satwik Bhattamishra, Sunayana Sitaram, Monojit Choudhury and Kalika Bali<br>
+                     <span class="conf"><a class="confshort" href="https://ltrc.iiit.ac.in/icon2019/">ICON'19</a> | International Conference on Natural
+                         Language Processing</span><br>
+                     <a class="tag" href="https://arxiv.org/pdf/1912.03457.pdf" target="_blank">pdf</a><span class="tagsep">|</span>
+                     <a class="tag" href="https://arxiv.org/abs/1912.03457" target="_blank">abstract</a><span class="tagsep">|</span>
+                     <a class="tag" href="cites/icon2019.bib" target="_blank">cite</a>
+                 </p>
+                 </div>
+                 <div class="py-2">
+                 <p class="paper my-2 pl-2">
+                     <span class="papertitle">CoSSAT: Code-Switched Speech Annotation Tool</span><br>
+                     Sanket Shah, Pratik Joshi, <span class="thisauthor">Sebastin Santy</span>, Sunayana Sitaram<br>
+                     <span class="conf"><a class="confshort" href="https://www.emnlp-ijcnlp2019.org/">AnnoNLP@EMNLP'19</a> | Empirical
+                         Methods in Natural Language
+                             Processing</span><br>
+                     <a class="tag" href="https://www.aclweb.org/anthology/D19-5907.pdf" target="_blank">pdf</a><span class="tagsep">|</span>
+                     <a class="tag" href="https://www.aclweb.org/anthology/D19-5907/" target="_blank">abstract</a><span class="tagsep">|</span>
+                     <a class="tag" href="cites/cossat.bib" target="_blank">cite</a><span class="tagsep">|</span>
+                     <a class="tag" href="assets/cossat.pdf" target="_blank">slides</a>
+                 </p>
+                 </div>
+                 <div class="py-2">
+                 <p class="paper my-2 pl-2">
+                     <span class="papertitle">INMT: Interactive Neural Machine Translation</span><br>
+                     <span class="thisauthor">Sebastin Santy</span>, Sandipan Dandapat, Monojit Choudhury, Kalika Bali<br>
+                     <span class="conf"><a class="confshort" href="https://www.emnlp-ijcnlp2019.org/">EMNLP'19 Demo</a> |
+                         Empirical Methods in Natural Language Processing</span><br>
+                     <a class="tag" href="https://microsoft.github.io/inmt/" target="_blank">website</a><span class="tagsep">|</span>
+                     <a class="tag" href="https://github.com/microsoft/inmt" target="_blank">code</a><span class="tagsep">|</span>
+                     <a class="tag" href="https://www.aclweb.org/anthology/D19-3018.pdf" target="_blank">pdf</a><span class="tagsep">|</span>
+                     <a class="tag" href="https://www.aclweb.org/anthology/D19-3018/" target="_blank">abstract</a><span class="tagsep">|</span>
+                     <a class="tag" href="cites/inmt.bib" target="_blank">cite</a><span class="tagsep">|</span>
+                     <a class="tag" href="assets/inmt_poster.pdf" target="_blank">poster</a>
+                 </p>   </div>
+                 <div class="py-2">
+                 <p class="paper my-2 pl-2">
+                     <span class="papertitle">Towards Task Understanding in Visual Settings</span><br>
+                     <span class="thisauthor">Sebastin Santy</span>, Wazeer Zulfikar, Rishabh Mehrotra, Emine Yilmaz<br>
+                     <span class="conf"><a class="confshort" href="#">AAAI'19 Student Abstract</a> | AAAI Conference on Artificial Intelligence</span> <br>
+                     <a class="tag" href="https://usercontext.github.io/SceneTask/resources/images/manuscript.pdf"
+                         target="_blank">pdf</a><span class="tagsep">|</span>
+                     <a class="tag" href="https://usercontext.github.io/SceneTask/" target="_blank">abstract</a><span class="tagsep">|</span>
+                     <a class="tag" href="cites/aaai2019.bib" target="_blank">cite</a><span class="tagsep">|</span>
+                     <a class="tag" href="https://usercontext.github.io/SceneTask/resources/images/poster.pdf"
+                         target="_blank">poster</a>
+                 </p>   </div>
+                 <div class="py-2">
+                 <p class="paper my-2 pl-2">
+                     <span class="papertitle">DataDepsGenerators.jl: making reusing data easy by automatically
+                         generating DataDeps.jl registration
+                         code</span><br>
+                     Lyndon White, <span class="thisauthor">Sebastin Santy</span><br>
+                     <span class="conf"><a class="confshort" href="#">JOSS'18</a> | Journal of Open Source Software</span> <br>
+                     <a class="tag" href="https://arxiv.org/pdf/1912.03457.pdf" target="_blank">pdf</a><span class="tagsep">|</span>
+                     <a class="tag" href="cites/datadeps.bib" target="_blank">cite</a><span class="tagsep">|</span>
+                     <a class="tag" href="https://www.youtube.com/watch?v=eMtuzjn_Xks" target="_blank">talk</a><span class="tagsep">|</span>
+                     <a class="tag"
+                         href="https://medium.com/@sebastinsanty/google-summer-of-code-2018-julia-computing-report-8d3f553d7050"
+                         target="_blank">blog post</a>
+                 </p>   </div>
+                 <div class="py-2">
+                 <p class="paper my-2 pl-2">
+                     <span class="papertitle">BITS Darshini: A Modular, Concurrent Protocol Analyzer
+                         Workbench</span><br>
+                     Prasad Talasila, Mihir Kakrambe, <span class="thisauthor">Sebastin Santy</span>, Anurag Rai, Neena Goveas, Bharat M
+                     Deshpande<br>
+                     <span class="conf"><a class="confshort" href="#">ICDCN'18</a> | International Conference on Distributed Computing and Networking</span> <br>
+                     <a class="tag" href="assets/icdcn.pdf" target="_blank">pdf</a><span class="tagsep">|</span>
+                     <a class="tag" href="https://dl.acm.org/doi/10.1145/3154273.3154316" target="_blank">abstract</a><span class="tagsep">|</span>
+                     <a class="tag" href="cites/darshini.bib" target="_blank">cite</a>
+                 </p>
 
-			</div>
+                 <p class="header pt-5">Talks</p>
+                 <div class="py-2">
+                 <p class="paper my-2 pl-2">
+                     <span class="papertitle">Repeatable Data Setup for Repeatable Science</span><br>
+                     Talked about DataDepsGenerators.jl and Reproducible AI.<br>
+                     <span class="conf">PyData 2018, 11 Times Square, New York City, United States</span><br>
+                     <a class="tag" href="https://www.youtube.com/watch?v=eMtuzjn_Xks" target="_blank">video</a><span class="tagsep">|</span>
+                     <a class="tag" href="https://pydata.org/nyc2018/schedule/presentation/14/"
+                         target="_blank">abstract</a>
+                 </p>
+                 </div>
+                 <div class="py-2">
+                 <p class="paper my-2 pl-2">
+                     <span class="papertitle">Tête-à-tête with <a
+                             href="https://en.wikipedia.org/wiki/A._P._J._Abdul_Kalam" target="_blank">APJ Abdul
+                             Kalam</a></span><br>
+                     As part of the Iken Scientifica 2009 winning team, got an opportunity to discuss tech advancements
+                     with His Excellency, Dr. APJ Abdul Kalam, Former President of India.<br>
+                     <span class="conf">10 Rajaji Marg, New Delhi, India</span><br>
+                     <a class="tag" href="https://www.youtube.com/watch?v=oj-rT6CouZg" target="_blank">video</a>
+                 </p>
+                 </div>
+                 </div> -->
 
-			<!--	This is the background image of the site.
-				All configuration of the background is done with CSS.
-				Look in the file assets/css/main.css and search for "#bg" to
-				see how this element is styled. Look for comments pointing 
-				to where you can set a new background image.
-			-->
-			<div id="bg"></div>
 
-			<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+                <div class="row text-center py-4">
+                    <div class="mx-auto mt-2">
+                        <img class="img-fluid instilogo p-2" src="images/tcs research.png">
+                        <div class="institution">TCS Research</div>
+                        <div class="years">D2022 - Present</div>
+                    </div>
+                    <div class="mx-auto mt-2">
+                        <img class="img-fluid instilogo p-1" src="images/iiitg.jpg">
+                        <div class="institution">IIIT Guwahati</div>
+                        <div class="years">2019 - Present</div>
+                    </div>
+                    <div class="mx-auto mt-2">
+                        <img class="img-fluid instilogo p-3" src="images/iiith.png">
+                        <div class="institution">IIIT Hyderabad</div>
+                        <div class="years">S2022</div>
+                    </div>
+                    <div class="mx-auto mt-2">
+                        <img class="img-fluid instilogo p-2" src="images/Amazon.png">
+                        <div class="institution">Amazon</div>
+                        <div class="years">S2022</div>
+                    </div>
+                    <div class="mx-auto mt-2">
+                        <img class="img-fluid instilogo p-3" src="images/IndianOilLogo.jpg">
+                        <div class="institution">IOCL</div>
+                        <div class="years">D2021</div>
+                    </div>
+                    <div class="mx-auto mt-2">
+                        <img class="img-fluid instilogo p-1" src="images/drdo.jfif">
+                        <div class="institution">DRDO</div>
+                        <div class="years">S2021</div>
+                    </div>
+                </div>
 
-	</body>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="assets/style-3.js"></script>
+</body>
+  <style>
+  </style>
 </html>
